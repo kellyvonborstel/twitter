@@ -15,6 +15,8 @@ class HomeTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.rowHeight = UITableView.automaticDimension
+        self.tableView.estimatedRowHeight = 150
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -49,7 +51,11 @@ class HomeTableViewController: UITableViewController {
         let user = tweetArray[indexPath.row]["user"] as! NSDictionary
         
         cell.userNameLabel.text = user["name"] as? String
+        
         cell.tweetContent.text = tweetArray[indexPath.row]["text"] as? String
+        
+        cell.setFavorite(tweetArray[indexPath.row]["favorited"] as! Bool)
+        cell.tweetId = tweetArray[indexPath.row]["id"] as! Int
         
         let imageUrl = URL(string: (user["profile_image_url_https"] as? String)!)
         let data = try? Data(contentsOf: imageUrl!)

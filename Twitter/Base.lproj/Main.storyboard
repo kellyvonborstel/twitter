@@ -77,7 +77,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlQ-U5-p65">
-                                            <rect key="frame" x="89" y="33" width="270" height="106"/>
+                                            <rect key="frame" x="89" y="33" width="270" height="66"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -106,15 +106,16 @@
                                         </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="LlQ-U5-p65" firstAttribute="bottom" secondItem="kGL-qi-gDL" secondAttribute="bottomMargin" id="4mO-MO-aBf"/>
+                                        <constraint firstItem="LlQ-U5-p65" firstAttribute="bottom" secondItem="kGL-qi-gDL" secondAttribute="bottomMargin" constant="-40" id="4mO-MO-aBf"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="lRQ-Je-cJO" secondAttribute="trailing" constant="10" id="7mU-r0-l2T"/>
-                                        <constraint firstItem="xYz-sM-PrP" firstAttribute="leading" secondItem="vp3-P8-4G4" secondAttribute="trailing" constant="8" id="AhF-FK-28K"/>
+                                        <constraint firstItem="xYz-sM-PrP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vp3-P8-4G4" secondAttribute="trailing" symbolic="YES" id="AhF-FK-28K"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="egw-N6-QLT" secondAttribute="bottom" constant="10" id="Wor-39-0Ww"/>
                                         <constraint firstItem="xYz-sM-PrP" firstAttribute="top" secondItem="kGL-qi-gDL" secondAttribute="topMargin" id="ZyZ-vR-3ye"/>
-                                        <constraint firstItem="lRQ-Je-cJO" firstAttribute="top" secondItem="LlQ-U5-p65" secondAttribute="bottom" constant="-40" id="b8D-io-qff"/>
+                                        <constraint firstItem="lRQ-Je-cJO" firstAttribute="top" secondItem="LlQ-U5-p65" secondAttribute="bottom" id="b8D-io-qff"/>
                                         <constraint firstItem="vp3-P8-4G4" firstAttribute="leading" secondItem="kGL-qi-gDL" secondAttribute="leadingMargin" id="bvi-oi-Zhs"/>
                                         <constraint firstItem="vp3-P8-4G4" firstAttribute="top" secondItem="kGL-qi-gDL" secondAttribute="topMargin" id="dq2-Pk-d9Q"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="lRQ-Je-cJO" secondAttribute="bottom" constant="10" id="m6B-UF-GeY"/>
+                                        <constraint firstAttribute="trailing" secondItem="xYz-sM-PrP" secondAttribute="trailing" constant="217" id="pSb-Lj-9EO"/>
                                         <constraint firstItem="LlQ-U5-p65" firstAttribute="top" secondItem="xYz-sM-PrP" secondAttribute="bottom" constant="4" id="pnS-Bw-oME"/>
                                         <constraint firstItem="LlQ-U5-p65" firstAttribute="trailing" secondItem="kGL-qi-gDL" secondAttribute="trailingMargin" id="qbK-JN-lqK"/>
                                         <constraint firstItem="LlQ-U5-p65" firstAttribute="leading" secondItem="vp3-P8-4G4" secondAttribute="trailing" constant="8" id="tjX-LS-2mW"/>
